@@ -52,3 +52,17 @@ boxplot(diabetes2$Insulin)
 
 # ---------------------------------------------------------------
 
+# ANÁLISE EXPLORATORIA.
+
+# Criação do boxplot para identificar outliers nas 
+# colunas do dataset.
+boxplot(diabetes2)
+
+# Criação de histogramas para visualizar a distribuição dos dados.
+hist(diabetes2$Pregnancies)
+hist(diabetes2$Age)
+hist(diabetes2$BMI)
+
+# Visualizando os valores de min, max, média, mediana...
+summary(diabetes2$Insulin)
+
