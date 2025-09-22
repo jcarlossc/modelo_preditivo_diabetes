@@ -234,4 +234,16 @@ print(paste("Resultado:",resultado))
 
 # ---------------------------------------------------------------
 
+# VISUALIZAÇÃO DOS RESULTADOS
 
+# Criando o arquivo com os resultados das predições.
+write.csv(predicoes,'resultado.csv')
+
+# Lendo o arquivo de previsões que foi gerado.
+resultado.csv <- read.csv('resultado.csv')
+
+# Alterando o nome das colunas do dataframe.
+names(resultado.csv) <- c('Indice','Valor previsto')
+
+# Visualizando o dataframe.
+resultado.csv
